@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-  <main className="font-firago hyphens-manual">
+  <main className="font-firago hyphens-manual bg-repeat bg-bianchi-light w-full h-full text-primary-100 heropattern-hideout-bianchi-dark">
 
     { /* Page */ }
     <div className="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white">

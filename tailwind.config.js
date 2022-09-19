@@ -2,6 +2,7 @@
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
+const heropatterns = require("tailwindcss-hero-patterns/src/patterns");
 
 module.exports = {
   content: [
@@ -9,7 +10,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    /* For Letter size */
+    heroPatterns: {
+      hideout: heropatterns.hideout,
+    },
     screens: {
       print: {"raw": "print"},
       xsm: "500px",
@@ -18,17 +21,10 @@ module.exports = {
       lg: "1079.5px",
       xl: "1280px",
     },
-    /* For A4 size */
-    // screens: {
-    //   screen: {"raw": "screen"},
-    //   print: {"raw": "print"},
-    //   xsm: "500px",
-    //   sm: "640px",
-    //   md: "811px",
-    //   lg: "1051px",
-    //   xl: "1280px",
-    // },
     extend: {
+      backgroundImage: {
+        'hideout-bg' : "url('../public/img/hideout.svg')"
+      },
       fontFamily: {
         "firago": ["FiraGO", ...defaultTheme.fontFamily.sans],
       },
@@ -73,7 +69,11 @@ module.exports = {
           "750": "hsl(214, 17%, 32%)",
           ...defaultTheme.colors.gray
         },
-        link: "#fbf3f3"
+        link: "#fbf3f3",
+        'bianchi': {
+          "light": "#f2fffd",
+          "dark": "#c3f7ee"
+        }
       },
     },
   },
@@ -217,6 +217,7 @@ module.exports = {
         variants: ["responsive"],
       })
     }),
+    require('tailwindcss-hero-patterns')
 
   ]
 };
