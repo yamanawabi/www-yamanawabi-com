@@ -12,12 +12,11 @@ export default function Home() {
 
       { /* Name */ }
       <header className="flex items-center mb-8 md:mb-11">
-        <div   className="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3"
-          styles="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
-          <div className="initial text-center" styles="padding-bottom: 0.1875rem; /*3px*/">Y</div>
-          <div className="text-center initial">N</div>
-        </div>
-        <h1 className="text-2xl font-semibold text-gray-750 pb-px">
+      <div   className="profilepic-container mr-5 text-base leading-none text-white font-medium print:bg-black px-3"
+styles="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+        <Image src="profilepic.png" width="160px" height="160px" />
+      </div>
+        <h1 className="text-3xl font-semibold text-gray-750 pb-px">
           Yama Nawabi
         </h1>
       </header>
@@ -38,14 +37,14 @@ export default function Home() {
             <section className="mb-4.5 break-inside-avoid">
               <header>
                 <h3 className="text-lg font-semibold text-gray-700 leading-snugish">
-                  Jack of all trades
+                  Sr. Systems Engineer
                 </h3>
                 <p className="leading-normal text-md text-gray-650">
                   
                 </p>
               </header>
               <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                Summary text.
+              Sr. Systems Engineer with extensive experience in cloud architecture, POSIX-based systems, SAN/NAS storage, networking, and virtualization. Committed to deploying resilient architecture, providing excellent customer service, and to lifelong learning of technology.
               </p>
             </section>
 
@@ -77,44 +76,62 @@ export default function Home() {
 
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Developed tools and documentation necessary to streamline project deployment processes and grow internal company knowledgebase.
+                Designed, deployed, and maintained cloud infrastructure for clients utilizing Amazon Web Services and Microsoft Azure. Trained engineering team on AWS and Azure.
+
       
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Trained junior engineers quickly across multiple technology sets and in customer service skills.
+                Utilized Infrastructure-as-code and configuration management tools including Terraform and Ansible.
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Provided infrastructure and workflow consultation services to a large number of M&E clients. Helped actualize sales opportunities. Gained experience managing projects from discovery to implementation to project closure
+                Developed CI/CD workflows for deploying client infrastructure, and trained engineering team on usage of GitHub, GitHub actions, and Git.
+
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Migrated clients from on-premise to both hybrid and cloud-first AWS and Azure deployments, some using Terraform
+                Designed, deployed, and maintained VMware vSphere solutions with vSAN and other block-based storage (Unity, Powerstore, VNX, XtremIO, and NetApp E-Series) and solutions using DellEMC VxRail (hyper converged).
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Oversaw numerous storage and network cutovers, ensuring proper planning and execution
+                Designed, deployed, and maintained vendor-provided NAS-based storage solutions (DellEMC Isilon/PowerScale, NetApp FAS, Quantum Xcellis DLC).
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Deployed a wide array of networking equipment (Cisco, Arista, and others) in layer 2 and layer 3 configurations (Arista VxLAN and VARP, Cisco vPC+HSRP)
+                Designed, deployed, and maintained network solutions and oversaw network cutovers, ensuring proper planning and execution (Arista, Cisco, DellEMC, and Broadcom based switching—Cisco vPC, Arista VxLAN, Arista MLAG, DellEMC ViLT, vPC+HSRP, MLAG+VRRP/VARP for first-hop routing).
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Deployed and configured hardware and VM-based Palo Alto series firewalls both on-premises and in cloud deployments.
+                Designed, deployed, and maintained Microsoft Active Directory environments, utilizing AD Sites and Services, Group Policy, AD Certificate Services, DHCP and DNS.
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Led F5 LTM load balancer deployment for a large digital media distribution and software company, allowing for a significant decrease in time to delivery to some of the biggest production studios (Apple, Amazon Studios, etc.)
+                Developed advanced Linux solutions for clients (automated SSSD-based domain joining, advanced dnsmasq and systemd-networkd configurations, development of CY2020 VFX image for Marvel, etc).
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Provided advanced configuration for storage appliances (Isilon, Xcellis, VNX, Unity) and topical configuration for NetApp and Quantum based storage
+                Deployed and configured hardware and VM-based Palo Alto series firewalls both on-premises and in cloud (Azure multi-virtual network) deployments. Deployed F5 LTM load balancers. Implemented IPsec site-to-site tunnels.
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Deployed and configured VxRail and other solutions utilizing VMware vSphere
+                Developed Python scripts to automate manual tasks for storage migrations and other use cases.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Developed clear and concise documentation for project deployment processes and other tasks, growing internal company knowledge-base.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Maintained internal infrastructure at colocation facility and warehouse laboratory environment.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Trained junior engineers quickly across multiple technology sets and in providing quality customer-service.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Provided technical project management and developed Gantt chart templates for common deployments. Trained project management team in use of Smartsheet and use of Gantt charts.
               </li>
             </ul>
           </section>
@@ -131,12 +148,49 @@ export default function Home() {
             <ul className="">
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Cisco
+                Maintained VMWare vSphere 6 infrastructure on Cisco UCS hardware
               </li>
               <li className="mt-2.1 text-md text-gray-700 leading-normal">
                 <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                HPC.
+                Architected and deployed 288 node HPC cluster on UCS B and C-series blades/servers and Fabric Interconnects. Enabled RDMA-based inter-node communication (usNIC vNIC utilizing SRIOV).
               </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Implemented CentOS based node provisioning method via xCAT.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Designed and implemented complete Puppet infrastructure for post-deploy configuration of HPC cluster with Prod/Dev CI environments utilizing internal Gitlab and Puppet R10k.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Configured and maintained NAS (Isilon) and block storage (VNX/XtremIO).
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Configured and maintained various Cisco Nexus switches (5548, 9504) for core switching and routing (vPC, HSRP).
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Implemented Grid Engine scheduler (SoGE) system with MPI queues.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Designed/implemented Elasticsearch logging and analytics infrastructure with Redis cache layer.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Wrote python and bash scripts to automate workflows.
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Accounted for 52% of highly technical service tickets (1834) on a team of three. Tickets included handling research software configuration and compilation requests (C/C++ software via GCC/Makefiles and CMake, Python, R, etc.).
+              </li>
+              <li className="mt-2.1 text-md text-gray-700 leading-normal">
+                <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Held workshops for faculty, staff, and students to teach them about Linux fundamentals and creation of job scripts.
+              </li>
+
             </ul>
           </section>
           </div>
@@ -179,7 +233,7 @@ export default function Home() {
               <header>
                 <h3 className="text-lg font-semibold text-gray-700 leading-snugish">
                   <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" className="group">
-                    AWS Certified Solutions Architect - Associate
+                    AWS Certified Solutions Architect - Associate 
                     <span className="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
                   </a>
                 </h3>
@@ -188,7 +242,24 @@ export default function Home() {
                 </p>
               </header>
               <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                Certificate ID# .
+                Certificate ID #9K86FSEKZMV4QMCD
+              </p>
+            </section>
+
+            <section className="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 className="text-lg font-semibold text-gray-700 leading-snugish">
+                  <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" className="group">
+                    AWS Cloud Practitioner 
+                    <span className="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                  </a>
+                </h3>
+                <p className="leading-normal text-md text-gray-650">
+                  August 2022 - August 2025
+                </p>
+              </header>
+              <p className="mt-2.1 text-md text-gray-700 leading-normal">
+                Certificate ID #EDSS1XGKZNB1193F
               </p>
             </section>
 
@@ -207,9 +278,6 @@ export default function Home() {
                 Sept 2022 - Sept 2025
               </p>
             </header>
-            <p className="mt-2.1 text-md text-gray-700 leading-normal">
-              Certification ID# .
-            </p>
           </section>
 
           <section className="mb-4.5 break-inside-avoid">
@@ -224,9 +292,6 @@ export default function Home() {
                   2019 - Current
                 </p>
               </header>
-              <p className="mt-2.1 text-md text-gray-700 leading-normal">
-                Certificate ID# .
-              </p>
             </section>
 
         </section>
@@ -312,34 +377,46 @@ export default function Home() {
             <div className="my-3.2 last:pb-1.5">
               <ul className="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  CSS
+                  RHEL/CentOS
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Rust
+                  Debian
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Git
+                  LVM
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Go
+                  Apache/nginx
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Linux Server
+                  MySQL/PgSQL
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  UI Design
+                  SSSD
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Photoshop
+                  Systemd
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Illustrator
+                  SW Compilation
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Figma
+                  Yum/dnf
                 </li>
                 <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                  Typography
+                  Apt
+                </li>
+                <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  NFSv3/4
+                </li>
+                <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  Samba
+                </li>
+                <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  chrony/ntpd
+                </li>
+                <li className="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  netplan/systemd-networkd
                 </li>
               </ul>
             </div>
